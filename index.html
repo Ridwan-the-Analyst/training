@@ -1,0 +1,341 @@
+<html><head><base href="/">
+    <title>Data Analysis Training Program</title>
+    <style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.6;
+        background: #f8f9fa;
+        color: #2d3748;
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #2c5282, #4299e1);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        animation: fadeInUp 0.8s ease-out;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    
+    .feature-card {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #4299e1;
+    }
+    
+    .cta {
+        background: #48bb78;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 2rem;
+        font-weight: bold;
+        transition: background 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .cta:hover {
+        background: #38a169;
+    }
+    
+    .price-tag {
+        background: #fed7d7;
+        color: #c53030;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 1rem 0;
+        font-weight: bold;
+    }
+    
+    .limited-seats {
+        background: #fff3cd;
+        color: #856404;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 2rem 0;
+        text-align: center;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    .benefits {
+        list-style: none;
+        margin: 2rem 0;
+    }
+    
+    .benefits li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .benefits li::before {
+        content: "✅";
+        margin-right: 0.5rem;
+    }
+    
+    .additional-benefits {
+        list-style: none;
+        margin: 2rem 0;
+    }
+    
+    .additional-benefits li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .additional-benefits li::before {
+        margin-right: 0.5rem;
+    }
+    
+    .contact-form {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .form-group textarea {
+        height: 100px;
+    }
+    
+    .payment-options {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .payment-option {
+        flex: 1;
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .payment-option.selected {
+        border-color: #48bb78;
+        background: #f0fff4;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="hero">
+            <h1>🚀 Learn Data Analysis with Me!</h1>
+            <p>Transform your career with comprehensive data analysis training</p>
+        </div>
+    
+        <div class="container">
+            <div class="price-tag">
+                Special Offer: 70k (two installments available)
+            </div>
+    
+            <div class="limited-seats">
+                🎯 Only 12 Seats Available - Reserve Your Spot Now!
+            </div>
+    
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Excel Mastery</h3>
+                    <p>Master data manipulation, analysis, and visualization using Microsoft Excel</p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>SQL Expertise</h3>
+                    <p>Learn to write efficient queries and manage databases effectively</p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Power BI</h3>
+                    <p>Create compelling dashboards and reports for data-driven decisions</p>
+                </div>
+            </div>
+    
+            <h2>Core Skills You'll Learn</h2>
+            <ul class="benefits">
+                <li>Excel for data manipulation</li>
+                <li>SQL for querying databases</li>
+                <li>Power BI for creating powerful dashboards</li>
+            </ul>
+    
+            <h2>Additional Benefits</h2>
+            <ul class="additional-benefits">
+                <li>💼 Professional CV Revamp</li>
+                <li>🌐 Portfolio Website Development Guidance</li>
+                <li>🔗 LinkedIn Profile Optimization</li>
+            </ul>
+    
+            <div class="contact-form">
+                <h2>Reserve Your Spot</h2>
+                <form id="reservation-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Option</label>
+                        <div class="payment-options">
+                            <div class="payment-option" data-amount="70000">
+                                <h4>Full Payment</h4>
+                                <p>₦70,000</p>
+                            </div>
+                            <div class="payment-option" data-amount="35000">
+                                <h4>First Installment</h4>
+                                <p>1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <button type="submit" class="cta">Proceed to Payment</button>
+                </form>
+            </div>
+        </div>
+    
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+    const paymentOptions = document.querySelectorAll('.payment-option');
+    let selectedAmount = 70000;
+    
+    paymentOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            paymentOptions.forEach(opt => opt.classList.remove('selected'));
+            option.classList.add('selected');
+            selectedAmount = parseInt(option.dataset.amount);
+        });
+    });
+    
+    // Select the first payment option by default
+    paymentOptions[0].classList.add('selected');
+    
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+    
+        const paymentHandler = PaystackPop.setup({
+            key: 'pk_live_5baf5bbac6f8113b254f648f8c80d8f487cef62f', // Replace with your public key
+            email: email,
+            amount: selectedAmount * 100, // Convert to kobo
+            currency: 'NGN',
+            ref: 'DA_TRAINING_' + Math.floor((Math.random() * 1000000000) + 1),
+            metadata: {
+                custom_fields: [
+                    {
+                        display_name: "Full Name",
+                        variable_name: "full_name",
+                        value: name
+                    },
+                    {
+                        display_name: "Phone Number",
+                        variable_name: "phone",
+                        value: phone
+                    }
+                ]
+            },
+            callback: function(response) {
+                // Handle successful payment
+                alert('Payment successful! Reference: ' + response.reference);
+                // You should verify this payment on your server before confirming the reservation
+                document.getElementById('reservation-form').reset();
+            },
+            onClose: function() {
+                // Handle payment window close
+                alert('Payment window closed. Please try again if you haven\'t completed your payment.');
+            }
+        });
+        
+        paymentHandler.openIframe();
+    });
+    </script>
+    </body></html>
